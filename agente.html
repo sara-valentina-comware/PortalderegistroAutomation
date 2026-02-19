@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agentes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/icono.png">
+</head>
+
+<body>
+
+<header class="main-header">
+    <div class="header-container">
+        <nav class="nav-menu">
+            
+            <a href="inicio.html" class="logo">
+                <img src="img/logo blanco.png" alt="Logo Empresa">
+            </a>
+
+            <div class="nav-links">
+                <a href="inicio.html">Inicio</a>
+                <a href="misRequerimientos.html">Mis Requerimientos</a>
+                <a href="agentes.html" class="active-link">Agentes</a>
+            </div>
+
+            <a href="#" class="logout" onclick="logout()">
+                <img src="img/log-out.png" alt="Salir">
+            </a>
+
+        </nav>
+    </div>
+</header>
+
+<main class="main-content">
+
+    <section class="page-header">
+        <h1>Agentes</h1>
+        <p>Selecciona el agente que deseas utilizar.</p>
+    </section>
+
+    <section class="agents-container">
+
+        <!-- AGENTE 1 -->
+        <div class="agent-card">
+            <div class="agent-icon">📧</div>
+            <h3>Agente MailBot</h3>
+            <p>
+                Este agente analiza los correos electrónicos que llegan a tu bandeja 
+                y genera un resumen automático con la información más importante.
+            </p>
+            <div class="agent-buttons">
+                <button class="btn-primary">Crear Ahora</button>
+                <button class="btn-secondary">Ver Detalles</button>
+            </div>
+        </div>
+
+        <!-- AGENTE 2 -->
+        <div class="agent-card">
+            <div class="agent-icon">📊</div>
+            <h3>Agente Análisis SuperSet</h3>
+            <p>
+                Este agente analiza los tableros que se encuentran en SuperSet 
+                para darte un resumen general con métricas clave y conclusiones.
+            </p>
+            <div class="agent-buttons">
+                <button class="btn-primary">Crear Ahora</button>
+                <button class="btn-secondary">Ver Detalles</button>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>

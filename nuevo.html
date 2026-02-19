@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/icono.png">
+    <title>Registro de Requerimientos</title>
+</head>
+
+<body class="nuevo-page">
+
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="nav-menu">
+                <a href="#" class="logo">
+                    <img src="img/logo blanco.png" alt="Logo Empresa">
+                </a>
+                <div class="nav-links">
+                    <a href="inicio.html">Inicio</a>
+                    <a href="misRequerimientos.html">Mis Requerimientos</a>
+                    <a href="validacion.html" id="navValidar">Validación</a>
+                </div>
+
+                <a href="#" class="logout" onclick="logout()">
+                    <img src="img/log-out.png" alt="Salir">
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content-bot">
+
+        <section class="chatbot-full">
+
+            <div class="chat-messages" id="chatMessages">
+
+                <div class="message bot">
+                    <div class="message-icon">
+                        <img src="img/bot.png" alt="Bot">
+                    </div>
+
+                    <div class="message-content">
+                        Soy Asistente de Gestión de Requerimientos.
+                        <br><br>
+                        Te ayudaré a crear tu requerimiento paso a paso.
+                        <br><br>
+                        ¿Cuál es tu nombre? 🙂
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="chat-input-area">
+                <div class="input-box">
+
+                    <label for="fileInput" class="attach-btn">📎</label>
+                    <input type="file" id="fileInput" hidden>
+
+                    <div id="filePreview" class="file-preview"></div>
+
+                    <textarea id="userInput" placeholder="Escribe tu mensaje..." rows="1"></textarea>
+                    <button onclick="sendMessage()">➤</button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
