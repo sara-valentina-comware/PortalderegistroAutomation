@@ -95,14 +95,13 @@ function irNuevo() {
     window.location.href = "nuevo.html";
 }
 
-function irMisRequerimientos() {
-    localStorage.removeItem("reqTemporal");
-    window.location.href = "misRequerimientos.html";
+function irNova() {
+    window.open("https://nova.comware.com.co/", "_blank");
 }
 
-function irValidacion() {
+function irAgentes() {
     localStorage.removeItem("reqTemporal");
-    window.location.href = "validacion.html";
+    window.location.href = "agente.html";
 }
 
 /* =========================

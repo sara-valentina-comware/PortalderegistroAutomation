@@ -19,7 +19,7 @@
                 <div class="nav-links">
                     <a href="inicio.html">Inicio</a>
                     <a href="misRequerimientos.html">Mis Requerimientos</a>
-                    <a href="validacion.html" id="navValidar">Validación</a>
+                    <a href="agente.html">Agentes</a>
                 </div>
                 
                 <a href="#" class="logout" onclick="logout()">
@@ -33,45 +33,44 @@
     <main class="main-content">
 
         <section class="intro">
-            <h1>Bienvenido al Panel de Gestión de Registro de Requerimientos</h1>
+            <h1>Bienvenido al Panel de Registro de Requerimientos</h1>
             <p>
-                Desde aquí puedes registrar nuevos requerimientos, hacer seguimiento a los existentes y gestionar su
-                flujo de aprobación. Todo tu trabajo centralizado y organizado en un solo lugar.
+                Desde aquí puedes crear asistentes de inteligencia artificial, crear un requerimiento nuevo o acceder a los agentes disponibles.
             </p>
         </section>
 
         <section class="actions">
+
+            <div class="action-card" onclick="irNova()">
+                <div class="icon">
+                    <img src="img/NOVAA.png" alt="Asistente de NOVA">
+                </div>
+                <div class="content">
+                    <h3>Asistente de NOVA</h3>
+                    <p>Crea tu asistente de inteligencia artificial personalizado.</p>
+                    <span class="action-btn">Ver Detalles →</span>
+                </div>
+            </div>
+
+            <div class="action-card" onclick="irAgentes()">
+                <div class="icon">
+                    <img src="img/agente.png" alt="Agentes">
+                </div>
+                <div class="content">
+                    <h3>Agentes</h3>
+                    <p>Accede a los agentes inteligentes disponibles para automatizar tareas y análisis.</p>
+                    <span class="action-btn">Ir a Agentes →</span>
+                </div>
+            </div>
 
             <div class="action-card" onclick="irNuevo()">
                 <div class="icon">
                     <img src="img/registro.png" alt="Nuevo Requerimiento">
                 </div>
                 <div class="content">
-                    <h3>Nuevo Requerimiento</h3>
+                    <h3>Portal nuevo Requerimiento</h3>
                     <p>Inicia el levantamiento de un requerimiento.</p>
                     <span class="action-btn">Crear Ahora →</span>
-                </div>
-            </div>
-
-            <div class="action-card" onclick="irMisRequerimientos()">
-                <div class="icon">
-                    <img src="img/consulta.png" alt="Consultar Requerimientos">
-                </div>
-                <div class="content">
-                    <h3>Consultar Requerimientos</h3>
-                    <p>Visualiza los requerimientos que haz solicitado.</p>
-                    <span class="action-btn">Ver Detalles →</span>
-                </div>
-            </div>
-
-            <div class="action-card" id="cardValidar" onclick="irValidacion()">
-                <div class="icon">
-                    <img src="img/pendiente.png" alt="Aprobacion Requerimientos">
-                </div>
-                <div class="content">
-                    <h3>Aprobación de Requerimientos</h3>
-                    <p>Aprueba los requerimientos que han solicitado.</p>
-                    <span class="action-btn">Ver Detalles →</span>
                 </div>
             </div>
 
