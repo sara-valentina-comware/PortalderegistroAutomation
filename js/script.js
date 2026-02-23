@@ -24,7 +24,7 @@ function formatMessage(text) {
     if (!text) return "";
 
     let formatted = text
-        .replace(/hola/gi, "👋 Hola")
+        .replace(/hola/gi, "👋 Holaaa")
         .replace(/gracias/gi, "🙏 Gracias")
         .replace(/incidente/gi, "⚠️ Incidente")
         .replace(/requerimiento/gi, "📝 Requerimiento");
