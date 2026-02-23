@@ -43,7 +43,7 @@ function removeFile() {
 /* =========================
    LOGIN / LOGOUT
 ========================= */
-async function login() {
+/*async function login() {
     const usuario = document.getElementById("usuario")?.value.trim();
     const password = document.getElementById("password")?.value.trim();
 
@@ -76,7 +76,7 @@ async function login() {
         console.error("Error en login:", error);
         alert("Error al conectar con el servidor");
     }
-}
+}*/
 
 function logout() {
     localStorage.removeItem("usuarioLogueado");
@@ -494,7 +494,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const paginaActual = window.location.pathname.split("/").pop();
     const enLogin = paginaActual === "index.html";
 
-    if (!usuario && !enLogin) window.location.href = "index.html";
+   // if (!usuario && !enLogin) window.location.href = "index.html";
 
     if (usuario) {
         localStorage.setItem("ultimaActividad", Date.now());
