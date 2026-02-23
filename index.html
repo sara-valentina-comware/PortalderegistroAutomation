@@ -9,28 +9,75 @@
     <title>Registro de Requerimientos</title>
 </head>
 
-<body class="login-page">
-    <div class="login-wrapper">
-
-        <div class="login-card">
-            <h2>Iniciar Sesión</h2>
-            <p class="subtitle">Plataforma de Gestión de Registro de Requerimientos</p>
-
-            <input type="text" id="usuario" placeholder="Usuario">
-            <input type="password" id="password" placeholder="Contraseña">
-
-            <button onclick="login()">Ingresar</button>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="nav-menu">
+                <a href="#" class="logo">
+                    <img src="img/logo blanco.png" alt="Logo Empresa">
+                </a>
+                <div class="nav-links">
+                    <a href="inicio.html">Inicio</a>
+                    <a href="misRequerimientos.html">Mis Requerimientos</a>
+                    <a href="agente.html">Agentes</a>
+                </div>
+                
+                <a href="#" class="logout" onclick="logout()">
+                    <img src="img/log-out.png" alt="Salir">
+                </a>
+            </nav>
         </div>
+    </header>
 
-        <div class="login-logo">
-            <div class="logo-placeholder">
-                <img src="img/logo sin fondo.png" alt="Logo Comware">
+
+    <main class="main-content">
+
+        <section class="intro">
+            <h1>Bienvenido al Panel de Registro de Requerimientos</h1>
+            <p>
+                Desde aquí puedes crear asistentes de inteligencia artificial, crear un requerimiento nuevo o acceder a los agentes disponibles.
+            </p>
+        </section>
+
+        <section class="actions">
+
+            <div class="action-card" onclick="irNova()">
+                <div class="icon">
+                    <img src="img/NOVAA.png" alt="Asistente de NOVA">
+                </div>
+                <div class="content">
+                    <h3>Asistente de NOVA</h3>
+                    <p>Crea tu asistente de inteligencia artificial personalizado.</p>
+                    <span class="action-btn">Ver Detalles →</span>
+                </div>
             </div>
-        </div>
 
-    </div>
+            <div class="action-card" onclick="irAgentes()">
+                <div class="icon">
+                    <img src="img/agente.png" alt="Agentes">
+                </div>
+                <div class="content">
+                    <h3>Agentes</h3>
+                    <p>Accede a los agentes inteligentes disponibles para automatizar tareas y análisis.</p>
+                    <span class="action-btn">Ir a Agentes →</span>
+                </div>
+            </div>
+
+            <div class="action-card" onclick="irNuevo()">
+                <div class="icon">
+                    <img src="img/registro.png" alt="Nuevo Requerimiento">
+                </div>
+                <div class="content">
+                    <h3>Portal nuevo Requerimiento</h3>
+                    <p>Inicia el levantamiento de un requerimiento.</p>
+                    <span class="action-btn">Crear Ahora →</span>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
 </body>
-
 <script src="js/script.js"></script>
 
 </html>
