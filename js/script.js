@@ -53,6 +53,10 @@ function removeFile() {
 /* =========================
    NAVEGACIÓN
 ========================= */
+function verCatalogo() {
+    const agentesSection = document.getElementById("agentes");
+    agentesSection.scrollIntoView({ behavior: "smooth" });
+}
 function irNuevo() {
   localStorage.removeItem("reqTemporal");
   window.location.href = "nuevo.html";
