@@ -1,75 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Portal de Registro de Requerimientos</title>
+
     <link rel="icon" href="img/icono.png">
-    <title>Registro de Requerimientos</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+
+    <!-- ================= HEADER ================= -->
     <header class="main-header">
         <div class="header-container">
             <nav class="nav-menu">
-                <a href="#" class="logo">
-                    <img src="img/logo blanco.png" alt="Logo Empresa">
+
+                <a href="index.html" class="logo">
+                    <img src="img/logo blanco.png" alt="Logo Comware">
                 </a>
+
                 <div class="nav-links">
-                    <a href="inicio.html">Inicio</a>
-                    <a href="misRequerimientos.html">Mis Requerimientos</a>
+                    <a href="index.html">Inicio</a>
                     <a href="agente.html">Agentes</a>
+                    <a href="catalogo.html">Catálogo</a>
                 </div>
-                
-                <a href="#" class="logout" onclick="logout()">
-                    <img src="img/log-out.png" alt="Salir">
-                </a>
+
+                <!-- Login / Logout deshabilitado temporalmente -->
+
             </nav>
         </div>
     </header>
 
-
+    <!-- ================= MAIN ================= -->
     <main class="main-content">
 
         <section class="intro">
-            <h1>Bienvenido al Panel de Registro de Requerimientos</h1>
+            <h1>Bienvenido al Portal de Registro de Requerimientos</h1>
             <p>
-                Desde aquí puedes crear asistentes de inteligencia artificial, crear un requerimiento nuevo o acceder a los agentes disponibles.
+                Desde aquí puedes interactuar con asistentes de inteligencia artificial,
+                crear un nuevo requerimiento o acceder a los agentes disponibles.
             </p>
         </section>
 
         <section class="actions">
 
+            <!-- NOVA -->
             <div class="action-card" onclick="irNova()">
                 <div class="icon">
-                    <img src="img/NOVAA.png" alt="Asistente de NOVA">
+                    <img src="img/NOVAA.png" alt="Asistente NOVA">
                 </div>
                 <div class="content">
-                    <h3>Asistente de NOVA</h3>
-                    <p>Crea tu asistente de inteligencia artificial personalizado.</p>
+                    <h3>Asistente NOVA</h3>
+                    <p>
+                        Crea y gestiona asistentes de inteligencia artificial para apoyar
+                        el levantamiento de requerimientos.
+                    </p>
                     <span class="action-btn">Ver Detalles →</span>
                 </div>
             </div>
 
+            <!-- AGENTES -->
             <div class="action-card" onclick="irAgentes()">
                 <div class="icon">
-                    <img src="img/agente.png" alt="Agentes">
+                    <img src="img/agente.png" alt="Agentes Inteligentes">
                 </div>
                 <div class="content">
                     <h3>Agentes</h3>
-                    <p>Accede a los agentes inteligentes disponibles para automatizar tareas y análisis.</p>
+                    <p>
+                        Accede a los agentes inteligentes disponibles para automatizar
+                        tareas y análisis.
+                    </p>
                     <span class="action-btn">Ir a Agentes →</span>
                 </div>
             </div>
 
+            <!-- NUEVO REQUERIMIENTO -->
             <div class="action-card" onclick="irNuevo()">
                 <div class="icon">
                     <img src="img/registro.png" alt="Nuevo Requerimiento">
                 </div>
                 <div class="content">
-                    <h3>Portal nuevo Requerimiento</h3>
-                    <p>Inicia el levantamiento de un requerimiento.</p>
+                    <h3>Nuevo Requerimiento</h3>
+                    <p>
+                        Inicia el levantamiento estructurado de un requerimiento técnico
+                        para tu proyecto.
+                    </p>
                     <span class="action-btn">Crear Ahora →</span>
                 </div>
             </div>
@@ -77,7 +95,9 @@
         </section>
 
     </main>
-</body>
-<script src="js/script.js"></script>
 
+    <!-- ================= SCRIPTS ================= -->
+    <script src="js/script.js"></script>
+
+</body>
 </html>
