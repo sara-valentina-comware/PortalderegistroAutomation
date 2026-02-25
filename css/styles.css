@@ -1471,3 +1471,12 @@ body {
 .catalogo-page .actions {
     display: block; /* anula flex */
 }
+/* =========================
+   AGENTS PAGE FIX
+========================= */
+
+.agents-page .main-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
