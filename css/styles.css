@@ -338,13 +338,13 @@ body {
     max-width: 1200px;
     margin: 60px auto;
     padding: 0 25px;
+}
 
-    .main-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: calc(100vh - 80px);
-    }
+.main-content.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
 }
 
 .intro {
@@ -1196,4 +1196,278 @@ body {
 .active-link {
     font-weight: bold;
     border-bottom: 2px solid white;
+}
+/* =========================
+   CATALOGO
+========================= */
+
+.catalogo-page {
+    background: #f5f7fb;
+}
+
+/* Contenedor principal */
+.catalogo-page .main-content {
+    max-width: 1200px;
+    margin: 40px auto 80px;
+    padding: 0 25px;
+}
+
+/* Intro catálogo */
+.catalogo-page .intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.catalogo-page .intro h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #273c75;
+    margin-bottom: 10px;
+}
+
+.catalogo-page .intro p {
+    font-size: 17px;
+    color: #555;
+    max-width: 820px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Grid responsive PRO */
+.agents-grid-catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+/* =========================
+   CARD AGENTE CATALOGO
+========================= */
+
+.agent-card-catalogo {
+    background: linear-gradient(135deg, #ffffff, #f4f7fb);
+    border-radius: 18px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.35s ease;
+}
+
+.agent-card-catalogo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 22px 40px rgba(0, 0, 0, 0.12);
+    border-color: #2282bf;
+}
+/* =========================
+   IMAGEN CARD
+========================= */
+
+.agent-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 14px;
+    margin-bottom: 15px;
+}
+
+.agent-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 🔑 NO se deforma */
+    transition: transform 0.5s ease;
+}
+
+.agent-card-catalogo:hover .agent-image img {
+    transform: scale(1.08);
+}
+/* =========================
+   CONTENIDO CARD
+========================= */
+
+.agent-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.agent-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #273c75;
+    margin-bottom: 8px;
+}
+
+.agent-content p {
+    font-size: 14.5px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+/* =========================
+   BOTON CARD
+========================= */
+
+.agent-card-catalogo button {
+    margin-top: auto; /* 🔑 alinea botones */
+    background: linear-gradient(135deg, #2282bf, #273c75);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.agent-card-catalogo button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #1a6aa0, #1e2f5c);
+    box-shadow: 0 10px 25px rgba(34, 130, 191, 0.35);
+}
+/* =========================
+   ANIMACION SCROLL
+========================= */
+
+.animate-card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.animate-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* =========================
+   DETALLE AGENTE
+========================= */
+
+.detalle-agente-page {
+    background: #f5f7fb;
+}
+
+/* HERO */
+.agent-hero {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 25px;
+    align-items: center;
+}
+
+.agent-hero h1 {
+    font-size: 36px;
+    color: #273c75;
+    margin-bottom: 15px;
+}
+
+.agent-hero p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.agent-hero-actions {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.agent-hero-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* CONTENIDO */
+.agent-detail-content {
+    max-width: 1200px;
+    margin: 0 auto 80px;
+    padding: 0 25px;
+}
+
+.agent-section {
+    margin-top: 60px;
+}
+
+.agent-section h2 {
+    font-size: 26px;
+    color: #273c75;
+    margin-bottom: 20px;
+}
+
+.agent-section p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* GRID */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* LISTA */
+.agent-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.agent-list li {
+    padding-left: 28px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.agent-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #2282bf;
+    font-weight: bold;
+}
+
+/* CASOS DE USO */
+.use-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.use-case-card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.use-case-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .agent-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
+/* =========================
+   FIX CATALOGO LAYOUT
+========================= */
+
+.catalogo-page .actions {
+    display: block; /* anula flex */
 }

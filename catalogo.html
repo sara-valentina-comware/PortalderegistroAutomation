@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,98 +8,161 @@
     <link rel="icon" href="img/icono.png">
     <title>Registro de Requerimientos</title>
 </head>
-
-<body>
+ 
+<body class="catalogo-page">
     <header class="main-header">
-        <div class="header-container">
-            <nav class="nav-menu-catalogo">
-                <div class="nav-links-catalogo">
-                    <a href="inicio.html">Agentes</a>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div class="header-container">
+        <nav class="nav-menu">
 
-    <section class="hero">
-        <img src="img/banner.jpg" alt="Banner" class="hero-img">
-        <button class="btn-ver-catalago" onclick="verCatalogo()">Ver Catálogo</button>
-    </section>
+            <a href="index.html" class="logo">
+                <img src="img/logo blanco.png" alt="Logo Comware">
+            </a>
 
+            <div class="nav-links">
+                <a href="index.html" class="active-link">Inicio</a>
+            </div>
+
+        </nav>
+    </div>
+</header>
+ 
+
+ 
     <main class="main-content">
         <section class="intro">
             <p>
-                Desde aquí puedes crear asistentes de inteligencia artificial, crear un requerimiento nuevo o acceder a
-                los agentes disponibles.
+               Bienvenido al catálogo de agentes. Aquí puedes explorar y gestionar todos los agentes disponibles.
             </p>
         </section>
-
+ 
         <section class="actions" id="agentes">
-            <div class="agents-grid">
+    <div class="agents-grid-catalogo">
 
-                <div class="agent-card">
-                    <h3>🤖 Agente Analista</h3>
-                    <p>Analiza requerimientos y detecta inconsistencias automáticamente.</p>
-                    <button>Ver Agente</button>
-                </div>
-
-                <div class="agent-card">
-                    <h3>📊 Agente BI</h3>
-                    <p>Genera métricas, reportes y dashboards inteligentes.</p>
-                    <button>Ver Agente</button>
-                </div>
-
-                <div class="agent-card">
-                    <h3>🛠️ Agente Soporte</h3>
-                    <p>Gestiona incidencias y tickets de soporte técnico.</p>
-                    <button>Ver Agente</button>
-                </div>
-
-                <div class="agent-card">
-                    <h3>⚡ Agente Automatizador</h3>
-                    <p>Automatiza procesos repetitivos dentro del sistema.</p>
-                    <button>Ver Agente</button>
-                </div>
-
-                <div class="agent-card">
-                    <h3>🔍 Agente Auditor</h3>
-                    <p>Valida reglas de negocio y cumplimiento de procesos.</p>
-                    <button>Ver Agente</button>
-                </div>
-
-                <div class="agent-card">
-                    <h3>💬 Agente Conversacional</h3>
-                    <p>Interactúa con usuarios mediante IA natural.</p>
-                    <button>Ver Agente</button>
-                </div>
-
-                <div class="agent-card">
-                    <h3>📂 Agente Documental</h3>
-                    <p>Organiza, clasifica y resume documentación.</p>
-                    <button>Ver Agente</button>
-                </div>
-
-                <div class="agent-card">
-                    <h3>🚀 Agente Despliegue</h3>
-                    <p>Asiste en releases y despliegues de software.</p>
-                    <button>Ver Agente</button>
-                </div>
-
-                <div class="agent-card">
-                    <h3>🧠 Agente Predictivo</h3>
-                    <p>Predice riesgos, tiempos y comportamientos.</p>
-                    <button>Ver Agente</button>
-                </div>
-
-                <div class="agent-card">
-                    <h3>🔐 Agente Seguridad</h3>
-                    <p>Monitorea accesos y detecta amenazas.</p>
-                    <button>Ver Agente</button>
-                </div>
-
+        <div class="agent-card-catalogo animate-card">
+            <div class="agent-image">
+                <img src="img/agentes/analista.jpg" alt="Agente Analista">
             </div>
-        </section>
+            <div class="agent-content">
+                <h3>🤖 Agente Analista</h3>
+                <p>Analiza requerimientos y detecta inconsistencias automáticamente.</p>
+                <button>Ver Agente</button>
+            </div>
+        </div>
+
+        <div class="agent-card-catalogo animate-card">
+            <div class="agent-image">
+                <img src="img/agentes/bi.jpg" alt="Agente BI">
+            </div>
+            <div class="agent-content">
+                <h3>📊 Agente BI</h3>
+                <p>Genera métricas, reportes y dashboards inteligentes.</p>
+                <button>Ver Agente</button>
+            </div>
+        </div>
+
+        <div class="agent-card-catalogo animate-card">
+            <div class="agent-image">
+                <img src="img/agentes/soporte.jpg" alt="Agente Soporte">
+            </div>
+            <div class="agent-content">
+                <h3>🛠️ Agente Soporte</h3>
+                <p>Gestiona incidencias y tickets de soporte técnico.</p>
+                <button>Ver Agente</button>
+            </div>
+        </div>
+
+        <div class="agent-card-catalogo animate-card">
+            <div class="agent-image">
+                <img src="img/agentes/automatizador.jpg" alt="Agente Automatizador">
+            </div>
+            <div class="agent-content">
+                <h3>⚡ Agente Automatizador</h3>
+                <p>Automatiza procesos repetitivos dentro del sistema.</p>
+                <button>Ver Agente</button>
+            </div>
+        </div>
+
+        <div class="agent-card-catalogo animate-card">
+            <div class="agent-image">
+                <img src="img/agentes/auditor.jpg" alt="Agente Auditor">
+            </div>
+            <div class="agent-content">
+                <h3>🔍 Agente Auditor</h3>
+                <p>Valida reglas de negocio y cumplimiento de procesos.</p>
+                <button>Ver Agente</button>
+            </div>
+        </div>
+
+        <div class="agent-card-catalogo animate-card">
+            <div class="agent-image">
+                <img src="img/agentes/conversacional.jpg" alt="Agente Conversacional">
+            </div>
+            <div class="agent-content">
+                <h3>💬 Agente Conversacional</h3>
+                <p>Interactúa con usuarios mediante IA natural.</p>
+                <button>Ver Agente</button>
+            </div>
+        </div>
+
+        <div class="agent-card-catalogo animate-card">
+            <div class="agent-image">
+                <img src="img/agentes/documental.jpg" alt="Agente Documental">
+            </div>
+            <div class="agent-content">
+                <h3>📂 Agente Documental</h3>
+                <p>Organiza, clasifica y resume documentación.</p>
+                <button>Ver Agente</button>
+            </div>
+        </div>
+
+        <div class="agent-card-catalogo animate-card">
+            <div class="agent-image">
+                <img src="img/agentes/despliegue.jpg" alt="Agente Despliegue">
+            </div>
+            <div class="agent-content">
+                <h3>🚀 Agente Despliegue</h3>
+                <p>Asiste en releases y despliegues de software.</p>
+                <button>Ver Agente</button>
+            </div>
+        </div>
+
+        <div class="agent-card-catalogo animate-card">
+            <div class="agent-image">
+                <img src="img/agentes/predictivo.jpg" alt="Agente Predictivo">
+            </div>
+            <div class="agent-content">
+                <h3>🧠 Agente Predictivo</h3>
+                <p>Predice riesgos, tiempos y comportamientos.</p>
+                <button>Ver Agente</button>
+            </div>
+        </div>
+
+        <div class="agent-card-catalogo animate-card">
+            <div class="agent-image">
+                <img src="img/agentes/seguridad.jpg" alt="Agente Seguridad">
+            </div>
+            <div class="agent-content">
+                <h3>🔐 Agente Seguridad</h3>
+                <p>Monitorea accesos y detecta amenazas.</p>
+                <button>Ver Agente</button>
+            </div>
+        </div>
+
+         <div class="agent-card-catalogo animate-card">
+            <div class="agent-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ-pu-Ay2YSkEJv8fujNSWpXAp8tJUNUAPAg&s" alt="Agente Seguridad">
+            </div>
+            <div class="agent-content">
+                <h3>Reportes</h3>
+                <p>Genera reportes personalizados y visualiza datos relevantes.</p>
+                <button onclick="location.href='AgenteReportes.html'">Ver Agente</button>
+            </div>
+        </div>
+
+    </div>
+</section>
     </main>
 </body>
 <script src="js/script.js"></script>
-
+ 
 </html>
