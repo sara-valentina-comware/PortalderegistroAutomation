@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agente de Registro de Productividad en Base de Datos</title>
+
+    <link rel="icon" href="img/icono.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="detalle-agente-page">
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="nav-menu">
+                <a href="#" class="logo">
+                    <img src="img/logo blanco.png" alt="Logo Empresa">
+                </a>
+                <div class="nav-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="agente.html">Agentes</a>
+                    <a href="catalogo.html">Catálogo</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= HERO AGENTE ================= -->
+    <section class="agent-hero">
+        <div class="agent-hero-content">
+            <span class="agent-tag">Data & Control Interno</span>
+            <h1>🗄️ Agente de Registro de Productividad en Base de Datos</h1>
+            <p class="agent-hero-description">
+                Centraliza y almacena horas trabajadas para control y reportes.
+            </p>
+
+            <div class="agent-hero-actions">
+                <button class="btn-primary">Solicitar Implementación</button>
+                <button class="btn-secondary" onclick="history.back()">Volver</button>
+            </div>
+        </div>
+
+        <div class="agent-hero-image">
+            <img src="img/base-datos.png" alt="Agente de Registro de Productividad">
+        </div>
+    </section>
+
+    <!-- ================= CONTENIDO ================= -->
+    <main class="agent-detail-content">
+
+        <!-- DESCRIPCIÓN -->
+        <section class="agent-section">
+            <h2>Descripción General</h2>
+            <div class="agent-card-block">
+                <p>
+                    Agente que consulta automáticamente las tareas finalizadas en la plataforma
+                    de gestión de proyectos, transforma los datos de esfuerzo registrados y los
+                    almacena en una base de datos dinámica centralizada, permitiendo seguimiento
+                    detallado de horas trabajadas por persona y proyecto sin depender de sistemas externos.
+                </p>
+            </div>
+        </section>
+
+        <!-- ¿QUÉ HACE? -->
+        <section class="agent-section">
+            <h2>¿Qué hace?</h2>
+            <div class="agent-card-block highlight">
+                <p>
+                    Extrae las tareas completadas con sus puntos de historia, las convierte a horas
+                    y minutos, mapea cada tarea a su responsable y proyecto, valida que no existan
+                    duplicados y almacena el registro en la base de datos. Agrupa los datos por persona
+                    y proyecto para generar reportes consolidados de productividad.
+                </p>
+            </div>
+        </section>
+
+        <!-- FUNCIONALIDADES -->
+        <section class="agent-section">
+            <h2>Funcionalidades Clave</h2>
+
+            <div class="reports-grid">
+                <div class="report-card">
+                    <h3>📥 Extracción Automática</h3>
+                    <p>Consulta tareas finalizadas desde la herramienta de gestión.</p>
+                </div>
+
+                <div class="report-card">
+                    <h3>🔄 Conversión de Esfuerzo</h3>
+                    <p>Transforma puntos de historia en horas y minutos trabajados.</p>
+                </div>
+
+                <div class="report-card">
+                    <h3>🧩 Validación de Duplicados</h3>
+                    <p>Previene registros repetidos en la base de datos.</p>
+                </div>
+
+                <div class="report-card">
+                    <h3>📊 Consolidación Inteligente</h3>
+                    <p>Agrupa datos por persona y proyecto para reportes claros.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFICIOS -->
+        <section class="agent-section">
+            <h2>Beneficios</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Base de Datos Centralizada</h3>
+                    <p>Control total sobre el registro de horas en una estructura propia.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Prevención de Duplicidad</h3>
+                    <p>Validaciones automáticas que garantizan integridad de datos.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Reportes Personalizados</h3>
+                    <p>Consultas por responsable, proyecto o período específico.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Menor Dependencia Externa</h3>
+                    <p>No requiere sistemas externos para análisis de productividad.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Trazabilidad Completa</h3>
+                    <p>Historial detallado de tareas y esfuerzo invertido.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Ejecución Flexible</h3>
+                    <p>Puede ejecutarse de forma programada o bajo demanda.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Alta Adaptabilidad</h3>
+                    <p>Compatible con cualquier plataforma de gestión de proyectos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CASOS DE USO -->
+        <section class="agent-section">
+            <h2>Casos de Uso</h2>
+
+            <div class="use-cases">
+                <div class="use-case-card">
+                    <h3>📅 Seguimiento Semanal</h3>
+                    <p>
+                        El líder consulta las horas registradas por cada miembro del equipo
+                        durante la semana directamente desde la base de datos centralizada.
+                    </p>
+                </div>
+
+                <div class="use-case-card">
+                    <h3>💰 Reporte para Facturación</h3>
+                    <p>
+                        El área administrativa extrae las horas invertidas por proyecto
+                        para sustentar la facturación mensual al cliente.
+                    </p>
+                </div>
+
+                <div class="use-case-card">
+                    <h3>🛡️ Auditoría Interna</h3>
+                    <p>
+                        Se consultan registros históricos de tareas finalizadas y su
+                        esfuerzo asociado sin depender de plataformas externas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESULTADO FINAL -->
+        <section class="agent-section">
+            <div class="result-highlight">
+                <h2>Resultado Final</h2>
+                <p>
+                    La organización cuenta con una base de datos dinámica y actualizada
+                    con el registro de horas trabajadas por cada miembro del equipo y proyecto,
+                    lista para análisis estratégico, auditoría interna y generación de reportes
+                    personalizados en cualquier momento.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
