@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agente de Reportes</title>
+
+    <link rel="icon" href="img/icono.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="detalle-agente-page">
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="nav-menu">
+                <a href="#" class="logo">
+                    <img src="img/logo blanco.png" alt="Logo Empresa">
+                </a>
+                <div class="nav-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="agente.html">Agentes</a>
+                    <a href="catalogo.html">Catálogo</a>
+                </div>
+
+                <a href="#" class="logout" onclick="logout()">
+                    <img src="img/log-out.png" alt="Salir">
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= HERO AGENTE ================= -->
+    <section class="agent-hero">
+        <div class="agent-hero-content">
+            <span class="agent-tag">Automatización & Analítica</span>
+            <h1>📊 Agente de Reportes ANS</h1>
+            <p class="agent-hero-description">
+                Consolida y genera automáticamente reportes de <strong>Acuerdos de Nivel de Servicio (ANS)</strong>,
+                productividad operativa y backlog, integrando datos de plataformas de tickets y telefonía.
+            </p>
+
+            <div class="agent-hero-actions">
+                <button class="btn-primary">Solicitar Implementación</button>
+                <button class="btn-secondary" onclick="history.back()">Volver</button>
+            </div>
+        </div>
+
+        <div class="agent-hero-image">
+            <img src="img/reportes.png" alt="Agente de Reportes ANS">
+        </div>
+    </section>
+
+    <!-- ================= CONTENIDO ================= -->
+    <main class="agent-detail-content">
+
+        <!-- DESCRIPCIÓN -->
+        <section class="agent-section">
+            <h2>Descripción General</h2>
+            <div class="agent-card-block">
+                <p>
+                    Agente inteligente que consolida información operativa y contractual para generar
+                    reportes ejecutivos precisos, oportunos y totalmente automatizados.
+                </p>
+            </div>
+        </section>
+
+        <!-- ¿QUÉ HACE? -->
+        <section class="agent-section">
+            <h2>¿Qué hace?</h2>
+            <div class="agent-card-block highlight">
+                <p>
+                    Extrae datos de plataformas de gestión de tickets y telefonía, cruza información de
+                    casos gestionados, encuestas, tiempos de respuesta y cumplimiento de ANS, generando
+                    automáticamente reportes estratégicos sin intervención manual.
+                </p>
+            </div>
+        </section>
+
+        <!-- REPORTES -->
+        <section class="agent-section">
+            <h2>Reportes que genera</h2>
+
+            <div class="reports-grid">
+                <div class="report-card">
+                    <h3>📈 Informe de ANS</h3>
+                    <p>Medición del cumplimiento de los acuerdos de nivel de servicio.</p>
+                </div>
+
+                <div class="report-card">
+                    <h3>📂 Informe de Backlog</h3>
+                    <p>Seguimiento y control de casos pendientes acumulados.</p>
+                </div>
+
+                <div class="report-card">
+                    <h3>⚙️ Informe de Productividad</h3>
+                    <p>Desempeño por equipo (mesa de ayuda, soporte y especialistas).</p>
+                </div>
+
+                <div class="report-card">
+                    <h3>🧾 Informe de Encuestas</h3>
+                    <p>Correlación entre casos gestionados y percepción del usuario.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFICIOS -->
+        <section class="agent-section">
+            <h2>Beneficios</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Transparencia Operativa</h3>
+                    <p>Visibilidad total del cumplimiento operativo y contractual.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Automatización Total</h3>
+                    <p>Eliminación de reportes manuales propensos a errores.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Información en Tiempo Real</h3>
+                    <p>Datos disponibles instantáneamente para gerencia.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Trazabilidad Completa</h3>
+                    <p>Histórico confiable para auditorías y revisiones.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Alertas Tempranas</h3>
+                    <p>Detección proactiva de riesgos de incumplimiento.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CASOS DE USO -->
+        <section class="agent-section">
+            <h2>Casos de Uso</h2>
+
+            <div class="use-cases">
+                <div class="use-case-card">
+                    <h3>📅 Cierre de mes contractual</h3>
+                    <p>
+                        Genera automáticamente el informe de ANS para presentación al cliente.
+                    </p>
+                </div>
+
+                <div class="use-case-card">
+                    <h3>🚨 Alerta temprana</h3>
+                    <p>
+                        Detecta riesgos de incumplimiento y notifica al líder de operación.
+                    </p>
+                </div>
+
+                <div class="use-case-card">
+                    <h3>📊 Revisión gerencial semanal</h3>
+                    <p>
+                        Entrega cortes de productividad sin generación manual de reportes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESULTADO FINAL -->
+        <section class="agent-section">
+            <div class="result-highlight">
+                <h2>Resultado Final</h2>
+                <p>
+                    Reportes consolidados, precisos y disponibles automáticamente para todos los
+                    stakeholders, garantizando control operativo y cumplimiento contractual.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

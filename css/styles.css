@@ -1197,6 +1197,7 @@ body {
     font-weight: bold;
     border-bottom: 2px solid white;
 }
+
 /* =========================
    CATALOGO
 ========================= */
@@ -1240,6 +1241,7 @@ body {
     gap: 30px;
     margin-top: 20px;
 }
+
 /* =========================
    CARD AGENTE CATALOGO
 ========================= */
@@ -1260,6 +1262,7 @@ body {
     box-shadow: 0 22px 40px rgba(0, 0, 0, 0.12);
     border-color: #2282bf;
 }
+
 /* =========================
    IMAGEN CARD
 ========================= */
@@ -1275,13 +1278,15 @@ body {
 .agent-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* 🔑 NO se deforma */
+    object-fit: cover;
+    /* 🔑 NO se deforma */
     transition: transform 0.5s ease;
 }
 
 .agent-card-catalogo:hover .agent-image img {
     transform: scale(1.08);
 }
+
 /* =========================
    CONTENIDO CARD
 ========================= */
@@ -1305,12 +1310,14 @@ body {
     line-height: 1.6;
     margin-bottom: 20px;
 }
+
 /* =========================
    BOTON CARD
 ========================= */
 
 .agent-card-catalogo button {
-    margin-top: auto; /* 🔑 alinea botones */
+    margin-top: auto;
+    /* 🔑 alinea botones */
     background: linear-gradient(135deg, #2282bf, #273c75);
     color: #ffffff;
     border: none;
@@ -1327,6 +1334,7 @@ body {
     background: linear-gradient(135deg, #1a6aa0, #1e2f5c);
     box-shadow: 0 10px 25px rgba(34, 130, 191, 0.35);
 }
+
 /* =========================
    ANIMACION SCROLL
 ========================= */
@@ -1341,6 +1349,7 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
 /* =========================
    DETALLE AGENTE
 ========================= */
@@ -1360,28 +1369,42 @@ body {
     align-items: center;
 }
 
-.agent-hero h1 {
+.agent-hero-content h1 {
     font-size: 36px;
     color: #273c75;
     margin-bottom: 15px;
 }
 
-.agent-hero p {
+.agent-hero-description {
     font-size: 18px;
     color: #555;
     line-height: 1.7;
 }
 
+/* Tag superior */
+.agent-tag {
+    display: inline-block;
+    background: #eaf3ff;
+    color: #2282bf;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+/* Botones */
 .agent-hero-actions {
     margin-top: 25px;
     display: flex;
     gap: 15px;
 }
 
+/* Imagen hero */
 .agent-hero-image img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
 /* CONTENIDO */
@@ -1407,31 +1430,117 @@ body {
     line-height: 1.8;
 }
 
-/* GRID */
+/* Tarjetas internas */
+.agent-card-block {
+    background: white;
+    border-radius: 14px;
+    padding: 22px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
+    margin-top: 10px;
+}
+
+.agent-card-block.highlight {
+    border-left: 5px solid #2282bf;
+    background: linear-gradient(135deg, #ffffff, #f4f8ff);
+}
+
+/* GRID 2 COLUMNAS */
 .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
 }
 
-/* LISTA */
-.agent-list {
-    list-style: none;
-    padding-left: 0;
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 40px;
 }
 
-.agent-list li {
-    padding-left: 28px;
-    margin-bottom: 12px;
-    position: relative;
+/* Beneficio estilo lista */
+.benefit-card {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  position: relative;
+  padding-left: 14px;
+  transition: 0.25s ease;
 }
 
-.agent-list li::before {
-    content: "✔";
-    position: absolute;
-    left: 0;
-    color: #2282bf;
-    font-weight: bold;
+.benefit-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 3px;
+  height: 80%;
+  border-radius: 10px;
+  background: linear-gradient(180deg, var(--primary), var(--secondary));
+  opacity: 0.7;
+}
+
+.benefit-card:hover {
+  transform: translateX(6px);
+}
+
+.benefit-icon {
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.benefit-card h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.benefit-card p {
+  margin: 3px 0 0;
+  font-size: 13px;
+  color: var(--text-soft);
+  line-height: 1.5;
+}
+
+/* REPORTES GRID */
+.reports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.report-card {
+    background: white;
+    border-radius: 14px;
+    padding: 18px;
+    border: 1px solid #e5e7eb;
+    transition: 0.3s ease;
+}
+
+.report-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-color: #2282bf;
+}
+
+.report-card h3 {
+    font-size: 15px;
+    color: #273c75;
+    margin-bottom: 6px;
+}
+
+.report-card p {
+    font-size: 13.5px;
+    color: #555;
+    line-height: 1.5;
 }
 
 /* CASOS DE USO */
@@ -1445,32 +1554,75 @@ body {
     background: white;
     padding: 25px;
     border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
+    border: 1px solid #e5e7eb;
 }
 
 .use-case-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+    border-color: #2282bf;
+}
+
+.use-case-card h3 {
+    font-size: 16px;
+    color: #273c75;
+    margin-bottom: 8px;
+}
+
+.use-case-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* RESULTADO FINAL */
+.result-highlight {
+    margin-top: 40px;
+    background: linear-gradient(135deg, #2282bf, #273c75);
+    color: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(39, 60, 117, 0.25);
+}
+
+.result-highlight h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.result-highlight p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    line-height: 1.7;
 }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .agent-hero {
         grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .agent-hero-actions {
+        justify-content: center;
     }
 
     .grid-2 {
         grid-template-columns: 1fr;
     }
 }
+
 /* =========================
    FIX CATALOGO LAYOUT
 ========================= */
 
 .catalogo-page .actions {
-    display: block; /* anula flex */
+    display: block;
+    /* anula flex */
 }
+
 /* =========================
    AGENTS PAGE FIX
 ========================= */
