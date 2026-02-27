@@ -9,95 +9,326 @@
     <title>Registro de Requerimientos</title>
 </head>
 
-<body>
+<body class="catalogo-page">
     <header class="main-header">
         <div class="header-container">
-            <nav class="nav-menu-catalogo">
-                <div class="nav-links-catalogo">
-                    <a href="inicio.html">Agentes</a>
+            <nav class="nav-menu">
+
+                <a href="index.html" class="logo">
+                    <img src="img/logo blanco.png" alt="Logo Comware">
+                </a>
+
+                <div class="nav-links">
+                    <a href="index.html" class="active-link">Inicio</a>
                 </div>
+
             </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <img src="img/banner.jpg" alt="Banner" class="hero-img">
-        <button class="btn-ver-catalago" onclick="verCatalogo()">Ver Catálogo</button>
-    </section>
+
 
     <main class="main-content">
-        <section class="intro">
-            <p>
-                Desde aquí puedes crear asistentes de inteligencia artificial, crear un requerimiento nuevo o acceder a
-                los agentes disponibles.
-            </p>
-        </section>
+        
 
-        <section class="actions" id="agentes">
-            <div class="agents-grid">
+    <!-- HEADER -->
+    <header class="catalogo-header">
+        <h2>Catálogo de Servicios Comware</h2>
+        <p>Aqui encontraras los servicios que tenemos activos en el momento</p>
+    </header>
 
-                <div class="agent-card">
-                    <h3>🤖 Agente Analista</h3>
-                    <p>Analiza requerimientos y detecta inconsistencias automáticamente.</p>
-                    <button>Ver Agente</button>
-                </div>
+    <!-- FILTROS -->
+    <div class="catalogo-filtros">
+        <input type="text" placeholder="Buscar..." class="catalogo-search">
 
-                <div class="agent-card">
-                    <h3>📊 Agente BI</h3>
-                    <p>Genera métricas, reportes y dashboards inteligentes.</p>
-                    <button>Ver Agente</button>
-                </div>
+        <select class="catalogo-select">
+            <option value="">Todas las categorías</option>
+            <option>???</option>
+            <option>???</option>
+            <option>???</option>
+        </select>
 
-                <div class="agent-card">
-                    <h3>🛠️ Agente Soporte</h3>
-                    <p>Gestiona incidencias y tickets de soporte técnico.</p>
-                    <button>Ver Agente</button>
-                </div>
+        <select class="catalogo-select">
+            <option value="">Ordenar por</option>
+            <option>???</option>
+            <option>???</option>
+            <option>???</option>
+        </select>
+    </div>
 
-                <div class="agent-card">
-                    <h3>⚡ Agente Automatizador</h3>
-                    <p>Automatiza procesos repetitivos dentro del sistema.</p>
-                    <button>Ver Agente</button>
-                </div>
+    <!-- GRID -->
+    <div class="catalogo-grid">
 
-                <div class="agent-card">
-                    <h3>🔍 Agente Auditor</h3>
-                    <p>Valida reglas de negocio y cumplimiento de procesos.</p>
-                    <button>Ver Agente</button>
-                </div>
+        <!-- CARD -->
+        <article class="catalogo-card">
+            <span class="catalogo-badge nuevo">Activo</span>
 
-                <div class="agent-card">
-                    <h3>💬 Agente Conversacional</h3>
-                    <p>Interactúa con usuarios mediante IA natural.</p>
-                    <button>Ver Agente</button>
-                </div>
-
-                <div class="agent-card">
-                    <h3>📂 Agente Documental</h3>
-                    <p>Organiza, clasifica y resume documentación.</p>
-                    <button>Ver Agente</button>
-                </div>
-
-                <div class="agent-card">
-                    <h3>🚀 Agente Despliegue</h3>
-                    <p>Asiste en releases y despliegues de software.</p>
-                    <button>Ver Agente</button>
-                </div>
-
-                <div class="agent-card">
-                    <h3>🧠 Agente Predictivo</h3>
-                    <p>Predice riesgos, tiempos y comportamientos.</p>
-                    <button>Ver Agente</button>
-                </div>
-
-                <div class="agent-card">
-                    <h3>🔐 Agente Seguridad</h3>
-                    <p>Monitorea accesos y detecta amenazas.</p>
-                    <button>Ver Agente</button>
-                </div>
-
+            <div class="catalogo-img">
+                <img src="img/servicio1.png" alt="Servicio">
             </div>
-        </section>
+
+            <div class="catalogo-body">
+                <span class="catalogo-categoria">Desarrollo</span>
+                <h3>CRM-PREVISORA</h3>
+
+                <p class="catalogo-desc">
+                    Optimiza flujos internos y reduce tareas manuales mediante automatización.
+                </p>
+
+                <ul class="catalogo-lista">
+                    <li>✔ Integración con APIs</li>
+                    <li>✔ Flujos personalizados</li>
+                    <li>✔ Soporte técnico</li>
+                </ul>
+            </div>
+
+            <div class="catalogo-footer">
+                <span class="catalogo-precio"></span>
+                <a href="#" class="catalogo-btn">Ver detalle</a>
+            </div>
+        </article>
+
+        <!-- CARD -->
+        <article class="catalogo-card destacado">
+            <span class="catalogo-badge nuevo">Activo</span>
+
+            <div class="catalogo-img">
+                <img src="img/servicio2.png" alt="Servicio">
+            </div>
+
+            <div class="catalogo-body">
+                <span class="catalogo-categoria">Desarrollo</span>
+                <h3>CRM-ICETEX</h3>
+
+                <p class="catalogo-desc">
+                    Diseño, automatización y envío de campañas efectivas.
+                </p>
+
+                <ul class="catalogo-lista">
+                    <li>✔ Plantillas responsive</li>
+                    <li>✔ Integración HubSpot</li>
+                    <li>✔ Métricas y reportes</li>
+                </ul>
+            </div>
+
+            <div class="catalogo-footer">
+                <span class="catalogo-precio"></span>
+                <a href="#" class="catalogo-btn">Ver detalle</a>
+            </div>
+        </article>
+
+        <!-- CARD -->
+        <article class="catalogo-card">
+            <span class="catalogo-badge nuevo">Activo</span>
+
+            <div class="catalogo-img">
+                <img src="img/servicio1.png" alt="Servicio">
+            </div>
+
+            <div class="catalogo-body">
+                <span class="catalogo-categoria">Desarrollo</span>
+                <h3>CRM-FUCN</h3>
+
+                <p class="catalogo-desc">
+                    Optimiza flujos internos y reduce tareas manuales mediante automatización.
+                </p>
+
+                <ul class="catalogo-lista">
+                    <li>✔ Integración con APIs</li>
+                    <li>✔ Flujos personalizados</li>
+                    <li>✔ Soporte técnico</li>
+                </ul>
+            </div>
+
+            <div class="catalogo-footer">
+                <span class="catalogo-precio"></span>
+                <a href="#" class="catalogo-btn">Ver detalle</a>
+            </div>
+        </article>
+
+        <!-- CARD -->
+        <article class="catalogo-card">
+            <span class="catalogo-badge nuevo">Activo</span>
+
+            <div class="catalogo-img">
+                <img src="img/servicio1.png" alt="Servicio">
+            </div>
+
+            <div class="catalogo-body">
+                <span class="catalogo-categoria">Desarrollo</span>
+                <h3>Nova-Comercial</h3>
+
+                <p class="catalogo-desc">
+                    Optimiza flujos internos y reduce tareas manuales mediante automatización.
+                </p>
+
+                <ul class="catalogo-lista">
+                    <li>✔ Integración con APIs</li>
+                    <li>✔ Flujos personalizados</li>
+                    <li>✔ Soporte técnico</li>
+                </ul>
+            </div>
+
+            <div class="catalogo-footer">
+                <span class="catalogo-precio"></span>
+                <a href="#" class="catalogo-btn">Ver detalle</a>
+            </div>
+        </article>
+
+        <!-- CARD -->
+        <article class="catalogo-card">
+            <span class="catalogo-badge nuevo">Activo</span>
+
+            <div class="catalogo-img">
+                <img src="img/servicio1.png" alt="Servicio">
+            </div>
+
+            <div class="catalogo-body">
+                <span class="catalogo-categoria">Desarrollo</span>
+                <h3>Metricas</h3>
+
+                <p class="catalogo-desc">
+                    Optimiza flujos internos y reduce tareas manuales mediante automatización.
+                </p>
+
+                <ul class="catalogo-lista">
+                    <li>✔ Integración con APIs</li>
+                    <li>✔ Flujos personalizados</li>
+                    <li>✔ Soporte técnico</li>
+                </ul>
+            </div>
+
+            <div class="catalogo-footer">
+                <span class="catalogo-precio"></span>
+                <a href="#" class="catalogo-btn">Ver detalle</a>
+            </div>
+        </article>
+
+        <!-- CARD -->
+        <article class="catalogo-card">
+            <span class="catalogo-badge nuevo">Activo</span>
+
+            <div class="catalogo-img">
+                <img src="img/servicio1.png" alt="Servicio">
+            </div>
+
+            <div class="catalogo-body">
+                <span class="catalogo-categoria">Desarrollo</span>
+                <h3>SurveyWare</h3>
+
+                <p class="catalogo-desc">
+                    Optimiza flujos internos y reduce tareas manuales mediante automatización.
+                </p>
+
+                <ul class="catalogo-lista">
+                    <li>✔ Integración con APIs</li>
+                    <li>✔ Flujos personalizados</li>
+                    <li>✔ Soporte técnico</li>
+                </ul>
+            </div>
+
+            <div class="catalogo-footer">
+                <span class="catalogo-precio"></span>
+                <a href="#" class="catalogo-btn">Ver detalle</a>
+            </div>
+        </article>
+
+        <!-- CARD -->
+        <article class="catalogo-card">
+            <span class="catalogo-badge nuevo">Activo</span>
+
+            <div class="catalogo-img">
+                <img src="img/servicio1.png" alt="Servicio">
+            </div>
+
+            <div class="catalogo-body">
+                <span class="catalogo-categoria">Desarrollo</span>
+                <h3>CRM-PREVISORA</h3>
+
+                <p class="catalogo-desc">
+                    Optimiza flujos internos y reduce tareas manuales mediante automatización.
+                </p>
+
+                <ul class="catalogo-lista">
+                    <li>✔ Integración con APIs</li>
+                    <li>✔ Flujos personalizados</li>
+                    <li>✔ Soporte técnico</li>
+                </ul>
+            </div>
+
+            <div class="catalogo-footer">
+                <span class="catalogo-precio"></span>
+                <a href="#" class="catalogo-btn">Ver detalle</a>
+            </div>
+        </article>
+
+        <!-- CARD -->
+        <article class="catalogo-card">
+            <span class="catalogo-badge nuevo">Activo</span>
+
+            <div class="catalogo-img">
+                <img src="img/servicio1.png" alt="Servicio">
+            </div>
+
+            <div class="catalogo-body">
+                <span class="catalogo-categoria">Desarrollo</span>
+                <h3>CRM-PREVISORA</h3>
+
+                <p class="catalogo-desc">
+                    Optimiza flujos internos y reduce tareas manuales mediante automatización.
+                </p>
+
+                <ul class="catalogo-lista">
+                    <li>✔ Integración con APIs</li>
+                    <li>✔ Flujos personalizados</li>
+                    <li>✔ Soporte técnico</li>
+                </ul>
+            </div>
+
+            <div class="catalogo-footer">
+                <span class="catalogo-precio"></span>
+                <a href="#" class="catalogo-btn">Ver detalle</a>
+            </div>
+        </article>
+
+        <!-- CARD -->
+        <article class="catalogo-card">
+            <span class="catalogo-badge nuevo">Activo</span>
+
+            <div class="catalogo-img">
+                <img src="img/servicio1.png" alt="Servicio">
+            </div>
+
+            <div class="catalogo-body">
+                <span class="catalogo-categoria">Desarrollo</span>
+                <h3>CRM-PREVISORA</h3>
+
+                <p class="catalogo-desc">
+                    Optimiza flujos internos y reduce tareas manuales mediante automatización.
+                </p>
+
+                <ul class="catalogo-lista">
+                    <li>✔ Integración con APIs</li>
+                    <li>✔ Flujos personalizados</li>
+                    <li>✔ Soporte técnico</li>
+                </ul>
+            </div>
+
+            <div class="catalogo-footer">
+                <span class="catalogo-precio"></span>
+                <a href="#" class="catalogo-btn">Ver detalle</a>
+            </div>
+        </article>
+
+    </div>
+
+    <!-- ESTADO VACÍO -->
+    <div class="catalogo-empty">
+        <p>No se encontraron resultados</p>
+    </div>
+
+</section>
+
     </main>
 </body>
 <script src="js/script.js"></script>
