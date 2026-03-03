@@ -1861,3 +1861,139 @@ body {
         flex-direction: column;
     }
 }
+
+/* =========================
+   DETALLE PRODUCTO
+========================= */
+
+.detalle {
+    padding: 60px 40px;
+    background: #ffffff;
+}
+
+/* HERO */
+.detalle-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.detalle-categoria {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2563eb;
+}
+
+.detalle-hero h1 {
+    font-size: 40px;
+    margin: 10px 0;
+    color: #111827;
+}
+
+.detalle-subtitulo {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+.detalle-botones {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-principal {
+    background: #2563eb;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-principal:hover {
+    background: #1e40af;
+}
+
+.btn-secundario {
+    background: #e5e7eb;
+    color: #111827;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.detalle-hero-img img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+/* SECCIONES */
+.detalle-seccion {
+    margin-bottom: 80px;
+}
+
+.detalle-seccion h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* GRID */
+.detalle-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.detalle-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.detalle-box {
+    background: #f9fafb;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.detalle-box h3 {
+    margin-bottom: 10px;
+}
+
+/* FONDO CLARO */
+.fondo-claro {
+    background: #f3f4f6;
+    padding: 60px 40px;
+    border-radius: 20px;
+}
+
+/* MODULOS */
+.detalle-modulos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.modulo {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .detalle-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .detalle-grid-3,
+    .detalle-grid-2,
+    .detalle-modulos {
+        grid-template-columns: 1fr;
+    }
+}
