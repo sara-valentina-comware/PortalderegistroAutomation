@@ -234,3 +234,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
   scrollToBottom(true);
 });
+
+function verCatalogo() {
+    const destino = document.getElementById("agentes");
+    if (!destino) return;
+
+    destino.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+}
+// =========================
+// ANIMAR CATALOGO
+// =========================
+const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    },
+    { threshold: 0.15 }
+);
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".animate-card").forEach(card => {
+        observer.observe(card);
+    });
+});

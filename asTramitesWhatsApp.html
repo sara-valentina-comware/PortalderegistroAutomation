@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente de Trámites por WhatsApp</title>
+
+    <link rel="icon" href="img/icono.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="detalle-agente-page">
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="nav-menu">
+                <a href="#" class="logo">
+                    <img src="img/logo blanco.png" alt="Logo Empresa">
+                </a>
+                <div class="nav-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="agente.html">Asistentes</a>
+                    <a href="catalogo.html">Catálogo</a>
+                </div>
+
+                <a href="#" class="logout" onclick="logout()">
+                    <img src="img/log-out.png" alt="Salir">
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="agent-hero">
+        <div class="agent-hero-content">
+            <span class="agent-tag">Canales Digitales & Automatización</span>
+            <h1>📲 Asistente de Trámites por WhatsApp</h1>
+            <p class="agent-hero-description">
+                Gestiona trámites automáticamente desde WhatsApp.
+            </p>
+
+            <div class="agent-hero-actions">
+                <button class="btn-primary">Solicitar Implementación</button>
+                <button class="btn-secondary" onclick="history.back()">Volver</button>
+            </div>
+        </div>
+
+        <div class="agent-hero-image">
+            <img src="img/whatsapp-tramites.png" alt="Asistente de Trámites por WhatsApp">
+        </div>
+    </section>
+
+    <!-- ================= CONTENIDO ================= -->
+    <main class="agent-detail-content">
+
+        <!-- DESCRIPCIÓN -->
+        <section class="agent-section">
+            <h2>Descripción General</h2>
+            <div class="agent-card-block">
+                <p>
+                    Bot conversacional en WhatsApp que guía al usuario paso a paso
+                    en la solicitud y trámite de un proceso, recopilando los datos
+                    necesarios, validando la información y confirmando el registro
+                    de la solicitud de forma automática.
+                </p>
+            </div>
+        </section>
+
+        <!-- ¿QUÉ HACE? -->
+        <section class="agent-section">
+            <h2>¿Qué hace?</h2>
+            <div class="agent-card-block highlight">
+                <p>
+                    Inicia la conversación detectando la intención del usuario,
+                    solicita de forma guiada los datos requeridos (personales y del trámite),
+                    valida la información capturada en tiempo real, genera una confirmación
+                    automática personalizada y registra la solicitud en el sistema correspondiente.
+                </p>
+            </div>
+        </section>
+
+        <!-- FUNCIONALIDADES -->
+        <section class="agent-section">
+            <h2>Funcionalidades Clave</h2>
+
+            <div class="reports-grid">
+                <div class="report-card">
+                    <h3>🤖 Detección de Intención</h3>
+                    <p>Identifica automáticamente el tipo de trámite solicitado.</p>
+                </div>
+
+                <div class="report-card">
+                    <h3>📝 Captura Guiada de Datos</h3>
+                    <p>Recopila información estructurada sin formularios complejos.</p>
+                </div>
+
+                <div class="report-card">
+                    <h3>✔️ Validación en Tiempo Real</h3>
+                    <p>Verifica datos antes de registrar la solicitud.</p>
+                </div>
+
+                <div class="report-card">
+                    <h3>📩 Confirmación Automática</h3>
+                    <p>Envía mensaje personalizado de confirmación inmediata.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFICIOS -->
+        <section class="agent-section">
+            <h2>Beneficios</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Atención 24/7</h3>
+                    <p>Disponible en el canal de mensajería más utilizado.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Experiencia Natural</h3>
+                    <p>Interacción conversacional sencilla y familiar para el usuario.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Confirmación Instantánea</h3>
+                    <p>El usuario recibe respuesta inmediata sin esperas.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Alta Adaptabilidad</h3>
+                    <p>Se ajusta a cualquier tipo de trámite o proceso.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Despliegue Rápido</h3>
+                    <p>Implementación ágil sobre WhatsApp Business API.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CASOS DE USO -->
+        <section class="agent-section">
+            <h2>Casos de Uso</h2>
+
+            <div class="use-cases">
+                <div class="use-case-card">
+                    <h3>🏢 Solicitudes Empresariales</h3>
+                    <p>
+                        Registro de solicitudes internas como vacaciones,
+                        certificados laborales o actualización de datos.
+                    </p>
+                </div>
+
+                <div class="use-case-card">
+                    <h3>🏛️ Trámites Ciudadanos</h3>
+                    <p>
+                        Gestión de certificados, consultas o solicitudes públicas
+                        directamente desde WhatsApp.
+                    </p>
+                </div>
+
+                <div class="use-case-card">
+                    <h3>📦 Solicitudes de Servicio</h3>
+                    <p>
+                        Registro de requerimientos técnicos o administrativos
+                        sin necesidad de formularios web.
+                    </p>
+                </div>
+
+                <div class="use-case-card">
+                    <h3>🔎 Consulta de Estado</h3>
+                    <p>
+                        El usuario puede consultar el estado de su trámite
+                        enviando un mensaje, sin llamadas ni correos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESULTADO FINAL -->
+        <section class="agent-section">
+            <div class="result-highlight">
+                <h2>Resultado Final</h2>
+                <p>
+                    El usuario completa su trámite íntegramente desde WhatsApp,
+                    recibe confirmación inmediata y la solicitud queda registrada
+                    automáticamente en el sistema, lista para procesamiento.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

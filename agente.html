@@ -1,117 +1,219 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Agentes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/icono.png">
+    <title>Registro de Requerimientos</title>
 </head>
 
-<body>
+<body class="catalogo-page">
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="nav-menu">
 
-<!-- ================= HEADER ================= -->
-<header class="main-header">
-    <div class="header-container">
-        <nav class="nav-menu">
+                <a href="index.html" class="logo">
+                    <img src="img/logo blanco.png" alt="Logo Comware">
+                </a>
 
-            <a href="index.html" class="logo">
-                <img src="img/logo blanco.png" alt="Logo Comware">
-            </a>
+                <div class="nav-links">
+                    <a href="index.html" class="active-link">Inicio</a>
+                </div>
 
-            <div class="nav-links">
-                <a href="index.html">Inicio</a>
-                
-                <a href="agente.html" class="active-link">Agentes</a>
-                <a href="catalogo.html">Catálogo</a>
-            </div>
+            </nav>
+        </div>
+    </header>
 
-            <!-- Login / Logout deshabilitado temporalmente -->
-
-        </nav>
-    </div>
-</header>
-
-<!-- ================= MAIN ================= -->
-<main class="main-content">
-
-    <section class="page-header">
-        <h1>Agentes</h1>
-        <p>Selecciona el agente que deseas utilizar.</p>
-    </section>
-
-    <section class="agents-container">
-
-        <!-- AGENTE 1 -->
-        <div class="agent-card">
-            <div class="agent-icon">📧</div>
-            <h3>Agente MailBot</h3>
+    <main class="main-content">
+        <section class="intro">
             <p>
-                Este agente analiza los correos electrónicos que llegan a tu bandeja
-                y genera un resumen automático con la información más importante.
+                Bienvenido al catálogo de agentes. Aquí puedes explorar y gestionar todos los agentes disponibles.
             </p>
-            <div class="agent-buttons">
-                <button class="btn-primary">Crear Ahora</button>
-                <button class="btn-secondary">Ver Detalles</button>
-            </div>
-
-        <!-- AGENTE 2 -->
-        <div class="agent-card">
-            <div class="agent-icon">📊</div>
-            <h3>Agente Análisis SuperSet</h3>
-            <p>
-                Este agente analiza los tableros que se encuentran en SuperSet
-                para darte un resumen general con métricas clave y conclusiones.
-            </p>
-            <div class="agent-buttons">
-                <button class="btn-primary">Crear Ahora</button>
-                <button class="btn-secondary">Ver Detalles</button>
-            </div>
-
-        <!-- AGENTE 3 -->
-        <div class="agent-card">
-            <div class="agent-icon">💬</div>
-            <h3>Agente Service Desk</h3>
-            <p>
-                Este agente es un chatbot para el área de service desk que se integra
-                con WhatsApp para crear casos.
-            </p>
-            <div class="agent-buttons">
-                <button class="btn-primary">Crear Ahora</button>
-                <button class="btn-secondary">Ver Detalles</button>
-            </div>
-
-        <!-- AGENTE 4 -->
-        <div class="agent-card">
-            <div class="agent-icon">🗣️</div>
-            <h3>Agente IVR ElevenLabs</h3>
-            <p>
-                Este agente genera audios de alta calidad usando ElevenLabs,
-                con voces reales para atención al usuario en primer contacto
-                de call center.
-            </p>
-            <div class="agent-buttons">
-                <button class="btn-primary">Crear Ahora</button>
-                <button class="btn-secondary">Ver Detalles</button>
-            </div>
-
-        <!-- AGENTE 5 -->
-        <div class="agent-card">
-            <div class="agent-icon">✍🏻</div>
-            <h3>Agente de Reportes Jira</h3>
-            <p>
-                Este agente genera reportes personalizados y dinámicos de Jira
-                que llegan al correo electrónico de líderes de equipo y colaboradores.
-            </p>
-            <div class="agent-buttons">
-                <button class="btn-primary">Crear Ahora</button>
-                <button class="btn-secondary">Ver Detalles</button>
-            </div>
-
         </section>
 
-    </main>
+        <section class="actions" id="agentes">
+            <div class="agents-grid-catalogo">
 
-    <script src="js/script.js"></script>
+                <div onclick="location.href='agReportesANS.html'" class="agent-card-catalogo animate-card">
+                    <div class="agent-image">
+                        <img src="" alt="Agente de Reportes ANS">
+                    </div>
+                    <div class="agent-content">
+                        <h3>📊Agente de Reportes ANS</h3>
+                        <p>Analiza requerimientos y detecta inconsistencias automáticamente.</p>
+                        <button onclick="location.href='aReportesANS.html'">Ver Agente</button>
+                    </div>
+                </div>
+
+                <div onclick="location.href='agValidacionSincronizacionCasos.html'"
+                    class="agent-card-catalogo animate-card">
+                    <div class="agent-image">
+                        <img src="" alt="Agente de Validación y Sincronización de Casos">
+                    </div>
+                    <div class="agent-content">
+                        <h3>🔄Agente de Validación y Sincronización de Casos</h3>
+                        <p>Valida y sincroniza casos entre sistemas automáticamente</p>
+                        <button onclick="location.href='agValidacionSincronizacionCasos.html'">Ver Agente</button>
+                    </div>
+                </div>
+
+                <div onclick="location.href='agCreacionTicketsWhatsApp.html'" class="agent-card-catalogo animate-card">
+                    <div class="agent-image">
+                        <img src="" alt="Agente de Creación de Tickets vía WhatsApp">
+                    </div>
+                    <div class="agent-content">
+                        <h3>🎫Agente de Creación de Tickets vía WhatsApp</h3>
+                        <p>Crea y registra tickets automáticamente desde WhatsApp.</p>
+                        <button onclick="location.href='agCreacionTicketsWhatsApp.html'">Ver Agente</button>
+                    </div>
+                </div>
+
+                <div onclick="location.href='agSincronizacionProductividad.html'"
+                    class="agent-card-catalogo animate-card">
+                    <div class="agent-image">
+                        <img src="" alt="Agente de Sincronización de Productividad">
+                    </div>
+                    <div class="agent-content">
+                        <h3>📊Agente de Sincronización de Productividad</h3>
+                        <p>Sincroniza tareas completadas y registra horas automáticamente.</p>
+                        <button onclick="location.href='agSincronizacionProductividad.html'">Ver Agente</button>
+                    </div>
+                </div>
+
+                <div onclick="location.href='agGestionInteligenteCorreos.html'"
+                    class="agent-card-catalogo animate-card">
+                    <div class="agent-image">
+                        <img src="" alt="Agente de Gestión Inteligente de Correos">
+
+                    </div>
+                    <div class="agent-content">
+                        <h3>📧Agente de Gestión Inteligente de Correos</h3>
+                        <p>Clasifica y gestiona correos con IA de forma automática.</p>
+                        <button onclick="location.href='agGestionInteligenteCorreos.html'">Ver Agente</button>
+                    </div>
+                </div>
+
+                <div onclick="location.href='agRegistroProductividadBD.html'" class="agent-card-catalogo animate-card">
+                    <div class="agent-image">
+                        <img src="" alt="Agente de Registro de Productividad en Base de Datos">
+                    </div>
+                    <div class="agent-content">
+                        <h3>🗄️Agente de Registro de Productividad en Base de Datos</h3>
+                        <p>Centraliza y almacena horas trabajadas para control y reportes.</p>
+                        <button onclick="location.href='agRegistroProductividadBD.html'">Ver Agente</button>
+                    </div>
+                </div>
+
+                <div onclick="location.href='agGeneracionMasivaAudios.html'" class="agent-card-catalogo animate-card">
+                    <div class="agent-image">
+                        <img src="" alt="Agente de Generación Masiva de Audios">
+                    </div>
+                    <div class="agent-content">
+                        <h3>🎙️Agente de Generación Masiva de Audios</h3>
+                        <p>Centraliza y almacena horas trabajadas para control y reportes.</p>
+                        <button onclick="location.href='agGeneracionMasivaAudios.html'">Ver Agente</button>
+                    </div>
+                </div>
+
+
+                <div onclick="location.href='agGeneracionIVR.html'" class="agent-card-catalogo animate-card">
+                    <div class="agent-image">
+                        <img src="img/iconoagenteivr.png" alt="Agente de Generación de Audios para IVR">
+                    </div>
+                    <div class="agent-content">
+                        <h3>🔊 Agente de Generación de Audios para IVR</h3>
+                        <p>Genera audios IVR automáticamente a partir de textos estructurados, creando múltiples
+                            versiones de voz listas para evaluación y despliegue.</p>
+                        <button onclick="location.href='agGeneracionIVR.html'">Ver Agente</button>
+                    </div>
+                </div>
+
+                <div onclick="location.href='agRedesSocialesbp.html'" class="agent-card-catalogo animate-card">
+                    <div class="agent-image">
+                        <img src="img/iconoredesbp.png" alt="Agente Predictivo">
+                    </div>
+                    <div class="agent-content">
+                        <h3>📱 Agente de Gestión de Redes Sociales con Bright Pattern</h3>
+                        <p>Integra redes sociales con Bright Pattern para una gestión omnicanal estructurada y medible.
+                        </p>
+                        <button onclick="location.href='agRedesSocialesbp.html'">Ver Agente</button>
+                    </div>
+                </div>
+
+                <div onclick="location.href='agCartaGH.html'" class="agent-card-catalogo animate-card">
+                    <div class="agent-image">
+                        <img src="img/acartaGH.png" alt="Agente Seguridad">
+                    </div>
+                    <div class="agent-content">
+                        <h3>📄 Agente de Carta Oferta Gestión Humana</h3>
+                        <p>Automatiza la creación, aprobación y registro de cartas oferta desde Gestión Humana.</p>
+                        <button onclick="location.href='agCartaGH.html'">Ver Agente</button>
+                    </div>
+                </div>
+
+                <div onclick="location.href='agITSMasig.html'" class="agent-card-catalogo animate-card">
+                    <div class="agent-image">
+                        <img src="img/iconoitsmasig.png" alt="Agente Seguridad">
+                    </div>
+                    <div class="agent-content">
+                        <h3>🧠 Agente de ITSM con Asignación Inteligente</h3>
+                        <p>Asigna automáticamente tickets al especialista correcto mediante análisis inteligente.</p>
+                        <button onclick="location.href='agITSMasig.html'">Ver Agente</button>
+                    </div>
+                </div>
+
+                <div onclick="location.href='agSincronizacionEstado.html'" class="agent-card-catalogo animate-card">
+                    <div class="agent-image">
+                        <img src="img/iconoestadoitsm.png" alt="Agente Seguridad">
+                    </div>
+                    <div class="agent-content">
+                        <h3>🔄 Agente de Sincronización y Cierre ITSM</h3>
+                        <p>Sincroniza y cierra automáticamente tickets entre plataformas ITSM con trazabilidad completa.
+                        </p>
+                        <button onclick="location.href='agSincronizacionEstado.html'">Ver Agente</button>
+                    </div>
+                </div>
+
+                <div onclick="location.href='agPortalRequerimientos.html'" class="agent-card-catalogo animate-card">
+                    <div class="agent-image">
+                        <img src="img/iconoportalrequerimientos.png" alt="Agente Seguridad">
+                    </div>
+                    <div class="agent-content">
+                        <h3>📝 Agente Portal de Creación de Requerimientos</h3>
+                        <p>Estandariza la creación y consulta de casos integrados con Jira desde un portal centralizado.
+                        </p>
+                        <button onclick="location.href='agPortalRequerimientos.html'">Ver Agente</button>
+                    </div>
+                </div>
+
+                <div onclick="location.href='agDescargaGrabaciones.html'" class="agent-card-catalogo animate-card">
+                    <div class="agent-image">
+                        <img src="img/iconodescarga.png" alt="Agente Seguridad">
+                    </div>
+                    <div class="agent-content">
+                        <h3>📥 Agente de Descarga y Tratamiento de Grabaciones</h3>
+                        <p>Descarga, organiza y prepara grabaciones contractuales de forma automatizada y segura.</p>
+                        <button onclick="location.href='agDescargaGrabaciones.html'">Ver Agente</button>
+                    </div>
+                </div>
+
+                <div onclick="location.href='agReporteCorreo.html'" class="agent-card-catalogo animate-card">
+                    <div class="agent-image">
+                        <img src="img/iconoreportecorreo.png" alt="Agente Seguridad">
+                    </div>
+                    <div class="agent-content">
+                        <h3>📧 Agente de Reportes de Correo Electrónico</h3>
+                        <p>Genera y envía reportes automáticos por correo con información consolidada en tiempo real.
+                        </p>
+                        <button onclick="location.href='agReporteCorreo.html'">Ver Agente</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+<script src="js/script.js"></script>
+
 </html>
