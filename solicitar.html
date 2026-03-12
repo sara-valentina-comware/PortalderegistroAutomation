@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Implementación</title>
+
+    <link rel="icon" href="/assets/img/icono.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="nuevo-page">
+
+<!-- ================= HEADER ================= -->
+<header class="main-header">
+    <div class="header-container">
+        <nav class="nav-menu">
+
+            <a href="index.html" class="logo">
+                <img src="/assets/img/logo blanco.png" alt="Logo Comware">
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="agente.html">Agentes</a>
+            </div>
+
+            <!-- Login / Logout deshabilitado -->
+
+        </nav>
+    </div>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main class="main-content-bot">
+
+    <section class="chatbot-full">
+
+        <div class="chat-messages" id="chatMessages">
+
+            <div class="message bot">
+                <div class="message-icon">
+                    <img src="/assets/img/bot.png" alt="Asistente NOVA">
+                </div>
+
+                <div class="message-content">
+                    Soy el Asistente de Gestión de Requerimientos.
+                    <br><br>
+                    Te ayudaré a crear tu requerimiento paso a paso.
+                    <br><br>
+                    ¿Cuál es tu nombre? 🙂
+                </div>
+            </div>
+
+        </div>
+
+        <div class="chat-input-area">
+            <div class="input-box">
+
+                <label for="fileInput" class="attach-btn">📎</label>
+                <input type="file" id="fileInput" hidden>
+
+                <div id="filePreview" class="file-preview"></div>
+
+                <textarea
+                    id="userInput"
+                    placeholder="Escribe tu mensaje..."
+                    rows="1"></textarea>
+
+                <button onclick="sendMessage()">➤</button>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portal de Registro de Requerimientos</title>
+    <title>Portal de Agentes</title>
 
-    <link rel="icon" href="img/icono.png">
+    <link rel="icon" href="/assets/img/icono.png">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -19,12 +19,10 @@
             <nav class="nav-menu">
 
                 <a href="index.html" class="logo">
-                    <img src="img/logo blanco.png" alt="Logo Comware">
+                    <img src="/assets/img/logo blanco.png" alt="Logo Comware">
                 </a>
 
                 <div class="nav-links">
-                    <a href="index.html">Inicio</a>
-                    <a href="agente.html">Agentes</a>
                     <a href="catalogo.html">Catálogo</a>
                 </div>
 
@@ -38,7 +36,7 @@
     <main class="main-content">
 
         <section class="intro">
-            <h1>Bienvenido al Portal de Registro de Requerimientos</h1>
+            <h1>Bienvenido al Portal de Agentes</h1>
             <p>
                 Desde aquí puedes interactuar con asistentes de inteligencia artificial,
                 crear un nuevo requerimiento o acceder a los agentes disponibles.
@@ -50,13 +48,12 @@
             <!-- NOVA -->
             <div class="action-card" onclick="irNova()">
                 <div class="icon">
-                    <img src="img/NOVAA.png" alt="Asistente NOVA">
+                    <img src="/assets/img/NOVAA.png" alt="Asistente NOVA">
                 </div>
                 <div class="content">
                     <h3>Asistente NOVA</h3>
                     <p>
-                        Crea y gestiona asistentes de inteligencia artificial para apoyar
-                        el levantamiento de requerimientos.
+                        Crea y gestiona asistentes de inteligencia artificial.
                     </p>
                     <span class="action-btn">Ver Detalles →</span>
                 </div>
@@ -65,28 +62,26 @@
             <!-- AGENTES -->
             <div class="action-card" onclick="irAgentes()">
                 <div class="icon">
-                    <img src="img/agente.png" alt="Agentes Inteligentes">
+                    <img src="/assets/img/agente.png" alt="Agentes Inteligentes">
                 </div>
                 <div class="content">
                     <h3>Agentes</h3>
                     <p>
-                        Accede a los agentes inteligentes disponibles para automatizar
-                        tareas y análisis.
+                        Accede a los agentes inteligentes disponibles.
                     </p>
                     <span class="action-btn">Ir a Agentes →</span>
                 </div>
             </div>
 
             <!-- NUEVO REQUERIMIENTO -->
-            <div class="action-card" onclick="irNuevo()">
+            <div class="action-card" onclick="location.href='solicitar.html'">
                 <div class="icon">
-                    <img src="img/registro.png" alt="Nuevo Requerimiento">
+                    <img src="/assets/img/registro.png" alt="Nuevo Requerimiento">
                 </div>
                 <div class="content">
-                    <h3>Nuevo Requerimiento</h3>
+                    <h3>Solicitar</h3>
                     <p>
-                        Inicia el levantamiento estructurado de un requerimiento técnico
-                        para tu proyecto.
+                        Solicita un Servicio y/o Agente.
                     </p>
                     <span class="action-btn">Crear Ahora →</span>
                 </div>

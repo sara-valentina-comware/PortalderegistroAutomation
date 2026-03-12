@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="/assets/img/icono.png">
+    <title>CRMWARE - PREVISORA</title>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="nav-menu">
+
+                <a href="index.html" class="logo">
+                    <img src="/assets/img/logo blanco.png" alt="Logo Comware">
+                </a>
+
+                <div class="nav-links">
+                    <a href="index.html" class="active-link">Inicio</a>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="product-page">
+
+        <!-- HERO PRODUCTO -->
+
+        <section class="product-hero">
+
+            <div class="hero-container">
+
+                <div class="hero-left">
+
+                    <span class="product-tag">Solución CRM</span>
+
+                    <h1>CRMWARE PREVISORA</h1>
+
+                    <p>
+                        Plataforma CRM diseñada para optimizar la gestión de clientes,
+                        automatizar procesos comerciales y mejorar la toma de decisiones.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="catalogo.html" class="btn-primary">Volver al Catálogo</a>
+                        <a href="solicitar.html" class="btn-primary">Solicitar Implementación</a>
+                    </div>
+
+                </div>
+
+                <div class="hero-right">
+                    <img src="/assets/img/previsoralogo.png">
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="product-carousel">
+
+            <h2>Vista del Sistema</h2>
+
+            <div class="carousel-container">
+
+                <button class="carousel-btn prev">&#10094;</button>
+
+                <div class="carousel-slides">
+
+                    <img src="/assets/img/crm1.png" class="slide active">
+                    <img src="/assets/img/crm2.png" class="slide">
+                    <img src="/assets/img/crm3.png" class="slide">
+                    <img src="/assets/img/crm4.png" class="slide">
+
+                </div>
+
+                <button class="carousel-btn next">&#10095;</button>
+
+            </div>
+
+        </div>
+
+        <!-- BENEFICIOS -->
+        <section class="benefits">
+
+            <h2>Beneficios</h2>
+
+            <div class="benefits-grid">
+
+                <div class="benefit-card">
+                    <span>📊</span>
+                    <h3>Gestión Centralizada</h3>
+                    <p>Toda la información de clientes en una única plataforma.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span>⚡</span>
+                    <h3>Automatización</h3>
+                    <p>Reduce tareas manuales y mejora la eficiencia.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span>🔐</span>
+                    <h3>Seguridad</h3>
+                    <p>Control de roles, permisos y trazabilidad.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span>📈</span>
+                    <h3>Analítica</h3>
+                    <p>Reportes e indicadores en tiempo real.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- MODULOS -->
+
+        <section class="modules">
+
+            <h2>Módulos</h2>
+
+            <div class="modules-grid">
+
+                <div class="module">
+                    <h3>Clientes</h3>
+                    <p>Gestión completa de clientes.</p>
+                </div>
+
+                <div class="module">
+                    <h3>Oportunidades</h3>
+                    <p>Seguimiento del embudo de ventas.</p>
+                </div>
+
+                <div class="module">
+                    <h3>Usuarios</h3>
+                    <p>Gestión de accesos y permisos.</p>
+                </div>
+
+                <div class="module">
+                    <h3>Reportes</h3>
+                    <p>Indicadores de desempeño.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VIDEO DEMO -->
+
+        <div class="product-video">
+
+            <h2>Video de Demostración</h2>
+
+            <video controls>
+                <source src="/assets/video/CRM-PREVISORA.mp4">
+            </video>
+
+        </div>
+
+
+        <!-- CTA -->
+
+        <div class="product-cta">
+
+            <h2>Transforma la gestión de tus clientes</h2>
+
+            <p>
+                CRMWARE permite centralizar información, optimizar procesos y mejorar
+                la productividad del equipo comercial.
+            </p>
+
+            <a href="catalogo.html" class="btn-primary">Explorar más soluciones</a>
+
+        </div>
+
+    </section>
+
+    <script>
+
+        const slides = document.querySelectorAll(".slide");
+
+        let index = 0;
+
+        function showSlide(i) {
+
+            slides.forEach(s => s.classList.remove("active"));
+            slides[i].classList.add("active");
+
+        }
+
+        document.querySelector(".next").onclick = () => {
+
+            index++;
+
+            if (index >= slides.length) {
+                index = 0;
+            }
+
+            showSlide(index);
+
+        };
+
+        document.querySelector(".prev").onclick = () => {
+
+            index--;
+
+            if (index < 0) {
+                index = slides.length - 1;
+            }
+
+            showSlide(index);
+
+        };
+
+        /* AUTO SLIDE */
+
+        setInterval(() => {
+
+            index++;
+
+            if (index >= slides.length) {
+                index = 0;
+            }
+
+            showSlide(index);
+
+        }, 5000);
+
+    </script>
+</body>
+
+</html>

@@ -54,8 +54,8 @@ function removeFile() {
    NAVEGACIÓN
 ========================= */
 function verCatalogo() {
-    const agentesSection = document.getElementById("agentes");
-    agentesSection.scrollIntoView({ behavior: "smooth" });
+  const agentesSection = document.getElementById("agentes");
+  agentesSection.scrollIntoView({ behavior: "smooth" });
 }
 function irNuevo() {
   localStorage.removeItem("reqTemporal");
@@ -233,4 +233,80 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   scrollToBottom(true);
+});
+
+function verCatalogo() {
+  const destino = document.getElementById("agentes");
+  if (!destino) return;
+
+  destino.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+}
+// =========================
+// ANIMAR CATALOGO
+// =========================
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".animate-card").forEach(card => {
+    observer.observe(card);
+  });
+});
+
+/* =========================
+FILTRO CATALOGO
+========================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const searchInput = document.getElementById("searchInput");
+  const cards = document.querySelectorAll(".catalogo-card");
+  const emptyMessage = document.querySelector(".catalogo-empty");
+
+  function filtrarCatalogo() {
+
+    const texto = searchInput.value.toLowerCase();
+    let visibles = 0;
+
+    cards.forEach(card => {
+
+      const titulo = card.querySelector("h3").textContent.toLowerCase();
+      const categoria = card.querySelector(".catalogo-categoria").textContent.toLowerCase();
+      const descripcion = card.querySelector(".catalogo-desc").textContent.toLowerCase();
+
+      if (
+        titulo.includes(texto) ||
+        categoria.includes(texto) ||
+        descripcion.includes(texto)
+      ) {
+        card.style.display = "block";
+        visibles++;
+      } else {
+        card.style.display = "none";
+      }
+
+    });
+
+    if (visibles === 0) {
+      emptyMessage.style.display = "block";
+    } else {
+      emptyMessage.style.display = "none";
+    }
+
+  }
+
+  searchInput.addEventListener("keyup", filtrarCatalogo);
+
 });
